@@ -1,0 +1,53 @@
+/* vrai faux */
+
+.Green{
+    width: 70%; 
+    height: auto;
+    background-color:#339966;
+    border-radius: 100px;
+    padding:30px;
+    text-align:left;
+    margin: 0 auto;
+    margin-top:30px;
+    margin-bottom:30px
+}
+ 
+.Green h2{ 
+    font-size: 40px;
+    text-align: center 
+}
+
+.container img{
+    width:70%;
+    height:70%;
+    border-radius: 20px;
+    filter: drop-shadow(30px 10px 4px black);
+    margin:30px;
+}
+
+/*FLEX my images*/
+
+.container {
+	display: flex;
+    flex-direction: column;
+    flex-wrap:wrap;
+    justify-content:center;
+    align-items: center;
+}
+
+@media screen and (min-width: 961px) {
+    .container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .container img{
+        width:28%;
+        height:28%;
+        border-radius: 20px;
+        filter: drop-shadow(30px 10px 4px black);
+        margin:30px;
+    }
+}

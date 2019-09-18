@@ -1,0 +1,46 @@
+/* articles */
+
+.sectionarticle{ 
+    display: flex;
+    flex-direction: column;
+    text-align:center; 
+    background: rgb(39, 38, 38);
+    width: 100%;
+}
+
+article img {
+    border-radius: 20px;
+    width: 50%;
+    margin-bottom: 20px;
+    filter: drop-shadow(30px 10px 4px #339966);
+}
+
+.article img:hover {
+    width: 22%;
+    transition: 0.2s ease-out;
+}
+
+article p{
+    text-align: justify;
+    color: bisque;
+    margin: 40px;
+    text-justify: auto;
+}
+
+textarea{
+    margin:5px auto;
+    padding:20px;
+    width:50%;
+    height:150px;
+    background: bisque;
+    border-radius: 25px;
+}
+
+.submit{
+    margin:5px 15%;
+    width:80px;
+    height:40px;
+    align-self: flex-end; 
+    background: bisque; 
+    border-radius: 25px;
+  }
