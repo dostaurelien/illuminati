@@ -15,16 +15,6 @@ article img {
     filter: drop-shadow(30px 10px 4px #339966);
 }
 
-.article img{
-    width:20%;
-    filter: drop-shadow(30px 10px 4px #339966);
-}
-
-.article img:hover {
-    width: 22%;
-    transition: 0.2s ease-out;
-}
-
 article p{
     text-align: justify;
     color: bisque;
@@ -41,25 +31,33 @@ textarea{
     border-radius: 25px;
 }
 
-.submit{
-    margin:5px 15%;
-    width:80px;
-    height:40px;
-    align-self: flex-end; 
-    background: bisque; 
-    border-radius: 25px;
+/* facebook and twitter share buttons */
+
+.share img { 
+    width: 50px;
+    height: 50px;
   }
 
-  article a {
+.share{
+    margin:0;
+    padding:0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content:center;
+    align-items: center;
+}
+
+article a {
     text-decoration: none;
-  }
+}
 
-  article{
+article{
     padding-left:5%;
     padding-right:5%;
 }
 
-.article{
+.article-p-index{
     height:250px;
 }
 
@@ -69,6 +67,38 @@ textarea{
       padding-right:20%;
     }
 
-    .article{
+    .article-p-index{
         height:450px;
     }
+
+  }
+
+/*Comments & send button*/
+
+.submit{
+width:80px;
+height:40px;
+background: bisque; 
+border-radius: 25px;
+margin-left:40%;
+}
+
+#mail, #name{
+margin:5px auto;
+padding:5px;
+width:25%;
+background: bisque;
+border-radius: 25px;
+}
+
+/* img on index page */
+
+.article-p-index img{
+    width:20%;
+    filter: drop-shadow(30px 10px 4px #339966);
+}
+
+.article-p-index img:hover {
+    width: 22%;
+    transition: 0.2s ease-out;
+}
