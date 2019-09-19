@@ -49,3 +49,26 @@ textarea{
     background: bisque; 
     border-radius: 25px;
   }
+
+  article a {
+    text-decoration: none;
+  }
+
+  article{
+    padding-left:5%;
+    padding-right:5%;
+}
+
+.article{
+    height:250px;
+}
+
+@media screen and (min-width: 961px) {
+    article{
+      padding-left:20%;
+      padding-right:20%;
+    }
+
+    .article{
+        height:450px;
+    }
