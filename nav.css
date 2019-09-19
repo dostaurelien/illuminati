@@ -1,42 +1,42 @@
 /* header */
 
 .header {
-    background-color: black;
-    position: fixed;
-    width: 100%;
-    z-index:1;          /* PJ : bring up front */
-  }
+  background-color: black;
+  position: fixed;
+  width: 100%;
+  z-index:1;          /* PJ : bring up front */
+}
   
-  .header ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    overflow: hidden;
-    background-color: black;
-  }
+.header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  background-color: black;
+}
   
-  .header li a {
-    display: block;
-    padding: 10px;
-    text-decoration: none;
-  }
+.header li a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+}
   
 /* PJ : hover effect in nav and in burger */
 
-  .header li a:hover,
-  .header .menu-btn:hover {
-    background-color: #339966;
-  }
+.header li a:hover,
+.header .menu-btn:hover {
+  background-color: #339966;
+}
   
  /* PJ : title */ 
 
-  .header .logo {
-    display: block;
-    float: left;
-    font-size: 19px;
-    padding: 10px;
-    text-decoration: none;
-  }
+.header .logo {
+  display: block;
+  float: left;
+  font-size: 19px;
+  padding: 10px;
+  text-decoration: none;
+}
   
 
     /* PJ : Create a tick button, turn it into a burger, add an animation */
@@ -44,96 +44,95 @@
 
 /* PJ : Unrolling menu */
   
-  .header .menu {
-    clear: both;
-    max-height: 0;
-  }
+.header .menu {
+  clear: both;
+  max-height: 0;
+}
   
 /* menu icon */
   
-  .header .menu-icon {
-    cursor: pointer;
-    display: inline-block;
-    float: right;
-    padding: 18px 10px;
-    position: relative;
-  }
+.header .menu-icon {
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  padding: 18px 10px;
+  position: relative;
+}
   
 /* PJ : This is the burger icon */
 
-  .header .menu-icon .navicon {
-    background: white;
-    display: block;
-    height: 2px;
-    position: relative;
-    width: 18px;
-  }
+.header .menu-icon .navicon {
+  background: white;
+  display: block;
+  height: 2px;
+  position: relative;
+  width: 18px;
+}
   
 /* PJ : Transition on burger icon (before, after)*/
 
-  .header .menu-icon .navicon:before,
-  .header .menu-icon .navicon:after {
-    background: white;
-    content: '';
-    display: block;
-    height: 100%;
-    position: absolute;
-    transition: all .2s ease-out;
-    width: 100%;
-  }
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+  background: white;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
   
-  .header .menu-icon .navicon:before {
-    top: 5px;
-  }
+.header .menu-icon .navicon:before {
+  top: 5px;
+}
   
-  .header .menu-icon .navicon:after {
-    top: -5px;
-  }
+.header .menu-icon .navicon:after {
+  top: -5px;
+}
   
 /* PJ : This is the burger button */
   
-  .header .menu-btn {
-    display: none;
-  }
+.header .menu-btn {
+  display: none;
+}
   
-  .header .menu-btn:checked ~ .menu {
-    max-height: 240px;
-  }
+.header .menu-btn:checked ~ .menu {
+  max-height: 240px;
+}
   
-  .header .menu-btn:checked ~ .menu-icon .navicon {
-    background: transparent;
-  }
+.header .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
   
 /* PJ : Transforms into a cross */
 
-  .header .menu-btn:checked ~ .menu-icon .navicon:before {
-    transform: rotate(-45deg);
-  }
+.header .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
   
-  .header .menu-btn:checked ~ .menu-icon .navicon:after {
-    transform: rotate(45deg);
-  }
+.header .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
   
-  .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
-  .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
-    top: 0;
-  }
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before, .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
   
 /* PJ : Media query for desktop */
 
-  @media screen and (min-width: 961px) {
-    .header li {
-      float: left;
-    }
-    .header li a {
-      padding: 10px;
-    }
-    .header .menu {
-      clear: none;
-      float: right;
-      max-height: none;
-    }
-    .header .menu-icon {
-      display: none;
-    }
+@media screen and (min-width: 961px) {
+  .header li {
+    float: left;
   }
+  .header li a {
+    padding: 10px;
+  }
+  .header .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+  .header .menu-icon {
+    display: none;
+  }
+}
