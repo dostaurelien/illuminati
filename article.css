@@ -15,6 +15,11 @@ article img {
     filter: drop-shadow(30px 10px 4px #339966);
 }
 
+.article img{
+    width:20%;
+    filter: drop-shadow(30px 10px 4px #339966);
+}
+
 .article img:hover {
     width: 22%;
     transition: 0.2s ease-out;
@@ -43,4 +48,29 @@ textarea{
     align-self: flex-end; 
     background: bisque; 
     border-radius: 25px;
+  }
+
+  article a {
+    text-decoration: none;
+  }
+
+  article{
+    padding-left:5%;
+    padding-right:5%;
+}
+
+.article{
+    height:250px;
+}
+
+@media screen and (min-width: 961px) {
+    article{
+      padding-left:20%;
+      padding-right:20%;
+    }
+
+    .article{
+        height:450px;
+    }
+
   }
