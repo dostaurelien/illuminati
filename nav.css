@@ -104,6 +104,8 @@
     background: transparent;
   }
   
+/* PJ : Transforms into a cross */
+
   .header .menu-btn:checked ~ .menu-icon .navicon:before {
     transform: rotate(-45deg);
   }
