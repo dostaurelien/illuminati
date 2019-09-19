@@ -9,7 +9,7 @@
     text-align:left;
     margin: 0 auto;
     margin-top:30px;
-    margin-bottom:30px
+    margin-bottom:30px;
 }
  
 .Green h2{ 
@@ -50,4 +50,10 @@
         filter: drop-shadow(30px 10px 4px black);
         margin:30px;
     }
+}
+
+/* W3C said section lacks heading */
+
+h6{
+    display:none
 }

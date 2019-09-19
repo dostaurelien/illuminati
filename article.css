@@ -17,18 +17,25 @@ article img {
 
 article p{
     text-align: justify;
-    color: bisque;
+    color: white;
     margin: 40px;
     text-justify: auto;
 }
 
-textarea{
-    margin:5px auto;
-    padding:20px;
-    width:50%;
-    height:150px;
-    background: bisque;
-    border-radius: 25px;
+/* embed video */
+
+iframe{
+    width:400px;
+    height:200px;
+    filter: drop-shadow(30px 10px 4px #339966);
+    border-radius: 20px;
+}
+
+@media screen and (min-width: 961px) {
+    iframe{
+        width:600px;
+        height:300px;
+    }
 }
 
 /* facebook and twitter share buttons */
@@ -48,9 +55,6 @@ textarea{
     align-items: center;
 }
 
-article a {
-    text-decoration: none;
-}
 
 article{
     padding-left:5%;
@@ -59,6 +63,10 @@ article{
 
 .article-p-index{
     height:250px;
+}
+
+.article-p-index article h2 a{
+    text-decoration:none
 }
 
 @media screen and (min-width: 961px) {
@@ -75,20 +83,28 @@ article{
 
 /*Comments & send button*/
 
+textarea{
+    margin:5px auto;
+    padding:20px;
+    width:50%;
+    height:150px;
+    background: bisque;
+    border-radius: 25px;
+}
 .submit{
-width:80px;
-height:40px;
-background: bisque; 
-border-radius: 25px;
-margin-left:40%;
+    width:80px;
+    height:40px;
+    background: bisque; 
+    border-radius: 25px;
+    margin-left:40%;
 }
 
-#mail, #name{
-margin:5px auto;
-padding:5px;
-width:25%;
-background: bisque;
-border-radius: 25px;
+.mail, .name{
+    margin:5px auto;
+    padding:5px;
+    width:25%;
+    background: bisque;
+    border-radius: 25px;
 }
 
 /* img on index page */
